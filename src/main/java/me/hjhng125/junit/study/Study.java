@@ -1,4 +1,4 @@
-package me.hjhng125.junit;
+package me.hjhng125.junit.study;
 
 public class Study {
 

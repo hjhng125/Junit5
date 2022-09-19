@@ -1,4 +1,4 @@
-package me.hjhng125.member;
+package me.hjhng125.junit.member;
 
 import lombok.Builder;
 

@@ -1,4 +1,4 @@
-package me.hjhng125;
+package me.hjhng125.junit.runner;
 
 public interface Runner {
 

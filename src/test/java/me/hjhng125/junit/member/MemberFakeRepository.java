@@ -1,11 +1,12 @@
-package me.hjhng125.member;
+package me.hjhng125.junit.member;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import me.hjhng125.junit.member.Member;
-import me.hjhng125.junit.member.MemberRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.support.PageableExecutionUtils;
 
 public class MemberFakeRepository implements MemberRepository {
 
@@ -16,6 +17,11 @@ public class MemberFakeRepository implements MemberRepository {
   @Override
   public List<Member> findAll() {
     return this.members;
+  }
+
+  @Override
+  public Page<Member> findAll(Pageable pageable) {
+    return PageableExecutionUtils.getPage(this.members, pageable, this.members::size);
   }
 
   @Override

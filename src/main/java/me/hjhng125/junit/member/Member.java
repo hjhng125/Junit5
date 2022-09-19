@@ -1,4 +1,4 @@
-package me.hjhng125.member;
+package me.hjhng125.junit.member;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
@@ -7,8 +7,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 import lombok.Builder;
+import lombok.ToString;
 
 @Entity
+@ToString(exclude = "memberId")
 public class Member {
 
   @Id @GeneratedValue(strategy = IDENTITY)
@@ -32,5 +34,13 @@ public class Member {
         .email(request.getEmail())
         .password(request.getPassword())
         .build();
+  }
+
+  public String email() {
+    return email;
+  }
+
+  public String passowrd() {
+    return password;
   }
 }

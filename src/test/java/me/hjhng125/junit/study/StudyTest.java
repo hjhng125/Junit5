@@ -1,4 +1,4 @@
-package me.hjhng125.junit;
+package me.hjhng125.junit.study;
 
 import org.junit.jupiter.api.*;
 
@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import me.hjhng125.junit.study.Study;
 
+@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 class StudyTest {
 
     @Test
@@ -17,7 +18,7 @@ class StudyTest {
 
     @Test
     @Disabled
-    void create2() {
+    void create1_again() {
         Study study = new Study();
         assertNotNull(study);
         System.out.println("create2");
