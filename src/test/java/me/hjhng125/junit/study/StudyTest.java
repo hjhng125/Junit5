@@ -4,6 +4,8 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import me.hjhng125.junit.study.Study;
+
 class StudyTest {
 
     @Test
