@@ -1,11 +1,11 @@
-package me.hjhng125.junit;
+package me.hjhng125.junit.study;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.condition.*;
 
 import java.time.Duration;
 
-import static me.hjhng125.junit.StudyStatus.DRAFT;
+import static me.hjhng125.junit.study.StudyStatus.DRAFT;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
